@@ -55,3 +55,28 @@ body {
 .text-custom {
   color: #bf3334;
 }
+
+.details-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-background {
+  background-color: #d9c148;
+  width: 60%;
+  height: 80%;
+  text-align: center;
+  padding: 40px;
+}
+
+.detail-image {
+  width: 200px;
+  height: 200px;
+  border: solid 3px #bf3334;
+}
+
+.red-text {
+  color: #bf3334;
+}
