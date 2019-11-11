@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import Filter from "./Filter";
-import Cocktails from "./Cocktails";
-
+import Home from "./Home";
+import Detail from "./Detail";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 function App() {
-  const [cocktails, updateCocktails] = useState([]);
-  console.log(cocktails);
   return (
-    <div className="page-container">
-      <Filter updater={updateCocktails} />
-      <Cocktails cocktails={cocktails} />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/detail/:drinkId">
+          <Detail />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 export default App;
