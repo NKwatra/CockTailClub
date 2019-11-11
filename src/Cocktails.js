@@ -2,7 +2,6 @@ import React from "react";
 import Drink from "./Drink";
 
 const Cocktails = props => {
-  debugger;
   return (
     <div className="results-container mt-4 rounded">
       {props.cocktails.length > 0 ? (
